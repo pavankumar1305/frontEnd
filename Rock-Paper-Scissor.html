@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <style>
+        body{
+            background-color:black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color:whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            margin-top: 100px;
+        }
+        img{
+
+            height:100px;
+            width:90px;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        button{
+            background-color: black;
+            border-color: white;
+            border-radius:25px;
+            margin-right: 20px;
+        }
+        p{
+            color: whitesmoke;
+            font-size:30px;
+            margin-left:20px;
+
+        }
+        .para{
+            color: whitesmoke;
+            font-size:30px;
+            margin-left:20px;
+        }
+        .res
+        {
+            color: whitesmoke;
+            font-size:30px;
+            margin-left:20px;
+        }
+        .moves{
+            color: whitesmoke;
+            font-size:30px;
+
+        }
+        .last{
+            color:white;
+            background-color:blue;
+            margin-left: 20px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+    <h1> Rock-Paper-Scissor Game</h1>
+    <button onclick="playGame('rock')" ><img src="images\rock-emoji.png"></button>
+    <button onclick="playGame('Paper')"><img src="images\paper-emoji.png"></button>
+    <button  onclick="playGame('Scissor')"><img src="images\scissors-emoji.png"></button>
+    <p> To play then select one </p>
+    <p class="res"></p>
+    <p class="para"></p>
+    <p class="moves"></p>
+    <button  class="last" onclick="
+        score.Wins=0;
+        score.Losses=0;
+        score.Ties=0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+ ">reset score</button>
+ </div>
+    <script src="test.js"></script>
+</body>
+</html>

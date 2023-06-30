@@ -54,24 +54,28 @@
 
         }
         .last{
-            color:white;
-            background-color:blue;
-            margin-left: 20px;
-
+            color:black;
+            background-color:whitesmoke;
+            margin-left: 100px;
+            height: 30px;
+            font-weight: 70px;
+            font-size: 15px;
+            cursor: pointer;
         }
+        
     </style>
 
 </head>
 <body>
-    <div>
+    <div id="ok">
     <h1> Rock-Paper-Scissor Game</h1>
-    <button onclick="playGame('rock')" ><img src="images\rock-emoji.png"></button>
-    <button onclick="playGame('Paper')"><img src="images\paper-emoji.png"></button>
-    <button  onclick="playGame('Scissor')"><img src="images\scissors-emoji.png"></button>
+    <button onclick="playGame('rock')" ><img src="images/rock-emoji.png"></button>
+    <button onclick="playGame('Paper')"><img src="images/paper-emoji.png"></button>
+    <button  onclick="playGame('scissors')"><img src="images/scissors-emoji.png"></button>
     <p> To play then select one </p>
     <p class="res"></p>
-    <p class="para"></p>
     <p class="moves"></p>
+    <p class="para"></p>
     <button  class="last" onclick="
         score.Wins=0;
         score.Losses=0;

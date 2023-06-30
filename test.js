@@ -10,7 +10,7 @@
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
     let result='';
-    if (playerMove === 'Scissor') 
+    if (playerMove === 'scissors') 
     {
       if (computerMove === 'rock') {
         result = 'You lose.';
@@ -60,7 +60,10 @@ function playGame(playerMove) {
      localStorage.setItem('score', JSON.stringify(score));
      updateScoreElement();
      document.querySelector('.res').innerHTML=result;
-     document.querySelector('.moves').innerHTML='you '+playerMove+'--'+'computer  '+computerMove;
+     document.querySelector('.moves').innerHTML=`you
+      <img src="images/${playerMove}-emoji.png"></img>
+      <img src="images/${computerMove}-emoji.png"></img>
+      computer`;
   }
  function updateScoreElement(){
   document.querySelector('.para')

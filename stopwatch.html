@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100vh;
+        background-color: black;
+    }
+    .main{
+        display: inline-block;
+    }
+    .sub{
+        background-color: rgb(128, 128, 128);
+        height:300px;
+        width:300px;
+        display:flex;
+        align-items:center ;
+        border-radius: 150px;
+    }
+    .sub1{
+        display:flex;
+        align-items: center;
+    }
+    h1{
+     margin-left:10px;
+     font-size: 75px;
+    }
+    button
+    {
+        margin:10px;
+        height:40px;
+        cursor: pointer;
+    }
+    .firstbutton{
+        margin-left:60px;
+        cursor:pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+        <h1>00:00:00</h1>
+        </div>
+        <div class="sub1">
+        <button class="firstbutton" onclick="watchstart()">start</button>
+        <button onclick="watchstop()">stop</button>
+        <button onclick="watchreset()">reset</button>
+        </div>
+        </div>
+        <script src="stopwatch.js"></script>
+</body>
+</html>
